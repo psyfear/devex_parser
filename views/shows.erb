@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>ADB Projects</title>
+  <link rel="stylesheet"
+  href="http://current.bootstrapcdn.com/bootstrap-v204/css/bootstrap-combined.min.css">
+</head>
+<body>
+  <div class="span8">
+    <!-- This is table layout is pulled directly from twitter bootstrap -->
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Country</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+        <% @projects.each do | project | %>
+          <tr>
+          <% project.children.children.each do |child| %>
+            <td><%= child.text %></td>
+          <% end %>
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+</body>
+</html>
+
+
+
