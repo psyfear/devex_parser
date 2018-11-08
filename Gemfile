@@ -5,6 +5,6 @@ source :rubygems
 # Ruby standard library. The remaining two are simply copied from the
 # require statements in app.rb
 
-gem 'sinatra'
+gem 'sinatra', '>= 1.3.2'
 gem 'nokogiri'
-gem 'thin'
+gem 'thin', '>= 1.3.1'
