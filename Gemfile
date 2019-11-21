@@ -6,5 +6,5 @@ source :rubygems
 # require statements in app.rb
 
 gem 'sinatra'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.10.5'
 gem 'thin'
