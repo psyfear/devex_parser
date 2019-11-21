@@ -3,7 +3,9 @@ GEM
   specs:
     daemons (1.1.8)
     eventmachine (0.12.10)
-    nokogiri (1.5.5)
+    mini_portile2 (2.4.0)
+    nokogiri (1.10.5)
+      mini_portile2 (~> 2.4.0)
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
@@ -21,6 +23,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  nokogiri
+  nokogiri (>= 1.10.5)
   sinatra
   thin
+
+BUNDLED WITH
+   1.17.3
